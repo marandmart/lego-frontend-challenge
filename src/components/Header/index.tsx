@@ -7,14 +7,22 @@ import searchIcon from "../../assets/icons/search.svg";
 import requestIcon from "../../assets/icons/shoppingbag.svg";
 import contactIcon from "../../assets/icons/message-circle.svg";
 import Button from "../Button";
+import { useContext } from "react";
+import { ModalContext } from "../context";
 
 const Header = () => {
+  const { openModal } = useContext(ModalContext);
+
+  const handleOpenMenu = () => {
+    openModal();
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles["header-container"]}>
         <div className={styles.menu}>
           <img src={brandLogo} className={styles.logo} alt="Lego Logo" />
-          <Button type="text">
+          <Button type="text" onClick={handleOpenMenu}>
             <div className={styles.headerBtn}>
               <img src={categoriesIcon} alt="Categories icon" />
               <Text as="span" type="small">
@@ -26,7 +34,7 @@ const Header = () => {
         <NavBar />
         <div className={styles.buttons}>
           <Button type="text">
-            <div className={styles.headerBtn}>
+            <div className={`${styles.headerBtn} ${styles.hidden}`}>
               <img src={contactIcon} alt="Contact bubble icon" />
               <Text as="span" type="small">
                 Contact Us

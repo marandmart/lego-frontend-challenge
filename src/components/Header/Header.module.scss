@@ -44,7 +44,7 @@ $header-padding: 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 9px;
+  gap: 7px;
   padding: 17px 5px;
 
   span {
@@ -64,5 +64,22 @@ $header-padding: 16px;
     nav {
       display: none;
     }
+  }
+
+  .buttons {
+    padding-top: 9px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hidden {
+    display: none;
+  }
+
+  .buttons {
+    margin-left: 0;
+  }
+  .menu {
+    margin-right: 0;
   }
 }
