@@ -41,3 +41,29 @@
   color: $brand-blue;
   border: 2px solid $brand-blue;
 }
+
+.circular--small-1 {
+  border-radius: 50%;
+  background-color: white;
+  height: 64px;
+  width: 64px;
+  border: 2px solid black;
+}
+
+.circular--small-1:hover {
+  color: $brand-blue;
+  border: 2px solid $brand-blue;
+}
+
+.circular--small-2 {
+  border-radius: 50%;
+  background-color: white;
+  height: 64px;
+  width: 64px;
+  border: 1px solid black;
+}
+
+.circular--small-2:hover {
+  color: $brand-blue;
+  border: 1px solid $brand-blue;
+}

@@ -2,7 +2,14 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps {
   onClick?: () => {};
-  type?: "primary" | "secondary" | "circular" | "close" | "text";
+  type?:
+    | "primary"
+    | "secondary"
+    | "circular"
+    | "circular--small-1"
+    | "circular--small-2"
+    | "close"
+    | "text";
   content: React.ReactNode;
 }
 
