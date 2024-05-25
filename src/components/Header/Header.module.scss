@@ -1,3 +1,7 @@
+@import "@/styles/variables";
+
+$header-padding: 16px;
+
 .header {
   position: fixed;
   top: 0;
@@ -5,12 +9,12 @@
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 9.5px 0px;
+  padding: 0 16px;
   z-index: 2;
 }
 
 .header-container {
-  max-width: 1534px;
+  max-width: $max-width;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -22,8 +26,11 @@
   }
 }
 
-.logo {
-  margin-right: 24px;
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+  margin-right: 40px;
 }
 
 .buttons {
@@ -32,13 +39,13 @@
   margin-left: 106px;
 }
 
-.categorieBtn,
 .headerBtn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 9px;
+  padding: 17px 5px;
 
   span {
     line-height: 13px;
@@ -46,6 +53,11 @@
   }
 }
 
-.categorieBtn {
-  margin-right: 40px;
+@media screen and (max-width: 1582px) {
+  .header-container {
+    justify-content: space-between;
+    nav {
+      display: none;
+    }
+  }
 }

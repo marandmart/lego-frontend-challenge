@@ -21,7 +21,7 @@ const NavBar = () => {
     <nav className={styles.navBar}>
       {linkList.map(({ displayName, href }) => (
         <Link href={href} key={href.replace(/#/g, "")}>
-          <Text>{displayName}</Text>
+          <Text as="span">{displayName}</Text>
         </Link>
       ))}
     </nav>

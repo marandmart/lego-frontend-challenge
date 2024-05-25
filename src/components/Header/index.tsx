@@ -12,15 +12,17 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles["header-container"]}>
-        <img src={brandLogo} className={styles.logo} alt="Lego Logo" />
-        <Button type="text">
-          <div className={styles.categorieBtn}>
-            <img src={categoriesIcon} alt="Categories icon" />
-            <Text as="span" type="small">
-              Categories
-            </Text>
-          </div>
-        </Button>
+        <div className={styles.menu}>
+          <img src={brandLogo} className={styles.logo} alt="Lego Logo" />
+          <Button type="text">
+            <div className={styles.headerBtn}>
+              <img src={categoriesIcon} alt="Categories icon" />
+              <Text as="span" type="small">
+                Categories
+              </Text>
+            </div>
+          </Button>
+        </div>
         <NavBar />
         <div className={styles.buttons}>
           <Button type="text">
