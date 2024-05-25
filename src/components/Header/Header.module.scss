@@ -56,6 +56,11 @@ $header-padding: 16px;
 @media screen and (max-width: 1582px) {
   .header-container {
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header-container {
     nav {
       display: none;
     }
