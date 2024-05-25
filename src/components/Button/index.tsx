@@ -10,6 +10,7 @@ interface ButtonProps {
     | "circular--xsmall"
     | "close"
     | "text";
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -17,9 +18,10 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   children,
   type = "primary",
+  className,
 }) => {
   return (
-    <button className={styles[type]} onClick={onClick}>
+    <button className={`${styles[type]}${` ${className}`}`} onClick={onClick}>
       {children}
     </button>
   );

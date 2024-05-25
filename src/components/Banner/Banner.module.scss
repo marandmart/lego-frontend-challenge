@@ -1,0 +1,55 @@
+@import "@/styles/variables";
+
+.video {
+  height: 100vh;
+  background-color: $color4;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+
+  p {
+    font-size: 80px;
+    line-height: 100px;
+    color: white;
+    text-align: left;
+  }
+
+  .btnContent,
+  .message {
+    margin-bottom: 120px;
+  }
+}
+
+.btnContent {
+  svg {
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: color 100ms ease-out, border-color 100ms ease-out;
+  }
+}
+
+.btnContent:hover svg {
+  stroke: $brand-blue;
+}
+
+.message {
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.scroll-message {
+  position: absolute;
+  right: 40px;
+  bottom: 31px;
+
+  span {
+    color: white;
+  }
+}
