@@ -1,0 +1,92 @@
+@import "@/styles/variables";
+
+.sectionContainer {
+  margin-top: 131px;
+}
+
+.relativeBox {
+  position: relative;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $max-width;
+  margin: 0 auto 80px;
+  gap: 180px;
+}
+
+.articleImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sectionArticle:last-child {
+  margin-bottom: 0;
+  flex-direction: row-reverse;
+
+  .articleContent {
+    align-items: end;
+
+    p {
+      text-align: end;
+    }
+  }
+
+  .articleImage {
+    bottom: 0;
+    left: 0;
+    top: unset;
+    right: unset;
+  }
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  height: 528px;
+  max-width: 586px;
+}
+
+.border-orange {
+  border-top: 1px solid $brand-orange;
+  border-bottom: 1px solid $brand-orange;
+}
+
+.border-green {
+  border-bottom: 1px solid $brand-green;
+}
+
+.border-blue {
+  border-bottom: 1px solid $brand-blue;
+}
+
+.border-grey {
+  border-bottom: 1px solid $background-3;
+}
+
+.border-black {
+  border-bottom: 1px solid $color1;
+}
+
+.border-pink {
+  border-bottom: 1px solid #fc36a5;
+}
+
+.border-yellow {
+  border-bottom: 1px solid $brand-yellow;
+}
+
+.border-red {
+  border-bottom: 1px solid $brand-red;
+}

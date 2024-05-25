@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Modal from "../../components/Modal";
 import Banner from "../../components/Banner";
 import { ModalContext } from "../../context";
+import Article from "../../components/Article";
 
 const Home = () => {
   const { closeModal, isOpen } = useContext(ModalContext);
@@ -20,6 +21,7 @@ const Home = () => {
       />
       <Header />
       <Banner />
+      <Article sectionId="gifting" borderColor="orange" />
     </>
   );
 };

@@ -42,6 +42,7 @@ export default {
 - Labels de texto na parte debaixo das fontes
 - Ajustar layout do Header para larguras abaixo de 350px
 - Tests to render class on button
+- Ajustar o jump do titulo
 
 # Extra
 

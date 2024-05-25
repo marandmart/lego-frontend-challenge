@@ -21,6 +21,21 @@
   }
 }
 
+.bannerSectionContainer {
+  max-width: $max-width;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 16px;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.videoBtnContainer {
+  display: flex;
+  align-items: end;
+  gap: 0 24px;
+}
+
 .btnContent {
   svg {
     stroke: #fff;
@@ -47,7 +62,9 @@
   position: absolute;
   right: 40px;
   bottom: 31px;
-
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
   span {
     color: white;
   }

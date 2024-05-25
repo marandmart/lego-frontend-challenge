@@ -4,13 +4,13 @@ import styles from "./NavBar.module.scss";
 
 const NavBar = () => {
   const linkList = [
-    { displayName: "Gifting", href: "#Gifting" },
-    { displayName: "Travel", href: "#Travel" },
-    { displayName: "Adults Welcome", href: "#Adults_Welcome" },
-    { displayName: "Art & Home Décor", href: "#Art_Home" },
-    { displayName: "Space", href: "#Space" },
-    { displayName: "Pop Culture", href: "#Pop_Culture" },
-    { displayName: "Toddlers", href: "#Toddlers" },
+    { displayName: "Gifting", href: "#gifting" },
+    { displayName: "Travel", href: "#travel" },
+    { displayName: "Adults Welcome", href: "#adults_Welcome" },
+    { displayName: "Art & Home Décor", href: "#art_Home" },
+    { displayName: "Space", href: "#space" },
+    { displayName: "Pop Culture", href: "#pop_Culture" },
+    { displayName: "Toddlers", href: "#toddlers" },
     {
       displayName: "Real World Role Playing",
       href: "#Real_World_Role_Playing",
