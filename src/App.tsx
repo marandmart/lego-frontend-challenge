@@ -1,9 +1,9 @@
-import Title from "./components/Title";
+import Text from "./components/Text";
 
 function App() {
   return (
     <>
-      <Title content={"Header"} level={1} />
+      <Text content="Hello world" type="large-regular" />
     </>
   );
 }

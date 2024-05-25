@@ -1,38 +1,49 @@
-$primary-font: "CeraPro";
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
-.heading1,
-.heading2,
-.heading3,
-.heading4 {
-  font-family: $primary-font;
-}
-
 .heading1 {
   font-size: 68px;
   line-height: 91px;
+  letter-spacing: 0.02em;
 }
 
 .heading2 {
   font-size: 50px;
   line-height: 62.85px;
+  letter-spacing: 0.02em;
 }
 
 .heading3 {
   font-size: 38px;
   line-height: 50px;
+  letter-spacing: 0.02em;
 }
 
 .heading4 {
   font-size: 28px;
   line-height: 42px;
+  letter-spacing: 0.02em;
 }
 
 .heading--bold {
   font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .heading1 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .heading2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .heading3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .heading4 {
+    font-size: 20px;
+    line-height: 38px;
+  }
 }
