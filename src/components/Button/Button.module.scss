@@ -1,0 +1,43 @@
+@import "@/styles/variables";
+
+.primary {
+  width: 221px;
+  height: 64px;
+  padding: 18px 40px;
+  border-radius: 37px;
+  border: 1px solid black;
+  background-color: white;
+  transition: color 100ms ease-out, border-color 100ms ease-out;
+}
+
+.primary:hover {
+  color: $brand-blue;
+  border-color: $brand-blue;
+}
+
+.secondary {
+  width: 167px;
+  height: 48px;
+  border-radius: 37px;
+  border: 1px solid black;
+  padding: 10px 32px;
+  background-color: white;
+}
+
+.secondary:hover {
+  color: $brand-blue;
+  border-color: $brand-blue;
+}
+
+.circular {
+  border-radius: 50%;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border: 2px solid black;
+}
+
+.circular:hover {
+  color: $brand-blue;
+  border: 2px solid $brand-blue;
+}

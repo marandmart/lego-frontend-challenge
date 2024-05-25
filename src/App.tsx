@@ -1,9 +1,9 @@
-import Text from "./components/Text";
+import Button from "./components/Button";
 
 function App() {
   return (
     <>
-      <Text content="Hello world" type="large-regular" />
+      <Button content="H" type="circular" />
     </>
   );
 }
