@@ -6,7 +6,7 @@ describe("Tests for the Button component", () => {
   const textContent = "Hello World";
 
   it("renders the text content inside the button", () => {
-    render(<Button content={textContent} />);
+    render(<Button>{textContent}</Button>);
 
     const buttonElement = screen.getByText(textContent);
     expect(buttonElement).toBeInTheDocument();
@@ -15,7 +15,7 @@ describe("Tests for the Button component", () => {
 
   it("calls onClick function when element is clicked", () => {
     const handleClick = jest.fn();
-    render(<Button content={textContent} onClick={handleClick} />);
+    render(<Button onClick={handleClick}>{textContent}</Button>);
 
     const buttonElement = screen.getByText(textContent);
     expect(buttonElement).toBeInTheDocument();

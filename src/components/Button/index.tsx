@@ -6,21 +6,21 @@ interface ButtonProps {
     | "primary"
     | "secondary"
     | "circular"
-    | "circular--small-1"
-    | "circular--small-2"
+    | "circular--small"
+    | "circular--xsmall"
     | "close"
     | "text";
-  content: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({
   onClick,
-  content,
+  children,
   type = "primary",
 }) => {
   return (
     <button className={styles[type]} onClick={onClick}>
-      {content}
+      {children}
     </button>
   );
 };

@@ -1,0 +1,22 @@
+@import "@/styles/variables";
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover * {
+  color: $brand-blue;
+
+  * {
+    color: $brand-blue;
+  }
+}
+
+.link--underlined {
+  transition: color 100ms ease-out, border-bottom 100ms ease-out;
+}
+
+.link--underlined:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid $brand-blue;
+}
