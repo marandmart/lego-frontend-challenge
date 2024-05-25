@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import Header from "../../components/Header";
 import Modal from "../../components/Modal";
-import { ModalContext } from "../../components/context";
 import Banner from "../../components/Banner";
+import { ModalContext } from "../../context";
 
 const Home = () => {
   const { closeModal, isOpen } = useContext(ModalContext);

@@ -1,5 +1,5 @@
+import ModalProvider from "./context";
 import Home from "./pages/Home";
-import ModalProvider from "./components/context";
 
 function App() {
   return (
