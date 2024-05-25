@@ -84,10 +84,12 @@ const ContentSections: React.FC<ContentSectionProps> = ({
     <>
       <section className={styles.sectionContainer}>
         <header id={sectionId} className={styles.sectionHeader}>
-          <Title level={4}>Gifting</Title>
-          <Text type="regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </Text>
+          <div className={styles.sectionHeaderContainer}>
+            <Title level={4}>Gifting</Title>
+            <Text type="regular">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </Text>
+          </div>
         </header>
         <div
           className={`${styles.relativeBox} ${styles[`border-${borderColor}`]}`}
