@@ -81,7 +81,8 @@
   .articleContent {
     align-items: end;
 
-    p {
+    p,
+    h3 {
       text-align: end;
     }
   }
@@ -105,6 +106,15 @@
 
 .relativeBox .flipOrientation {
   flex-direction: row;
+
+  .articleContent {
+    align-items: flex-start;
+    p,
+    h3 {
+      text-align: left;
+    }
+  }
+
   .articleImage {
     top: 0;
     right: 0;
