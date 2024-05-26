@@ -12,6 +12,7 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(-100%);
   z-index: 3;
+  overflow-y: scroll;
 }
 
 .visible {
@@ -28,7 +29,8 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  padding: 0 16px;
+  gap: 40px;
 }
 
 .closeButton {
@@ -57,13 +59,14 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   border-left: 1px solid black;
+  border-top: 1px solid black;
+  height: 100vh;
 }
 
 .modalContentSets div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 33.33vh;
 }
 
 .modalContentSets div:nth-child(n) {
@@ -92,7 +95,7 @@
 .themeLine {
   border-bottom: 1px solid #525252;
   position: absolute;
-  left: -106px;
+  left: -91px;
   top: 365px;
   width: 106px;
 }
@@ -100,13 +103,24 @@
 @media screen and (max-width: 1200px) {
   .modalContentSets {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+  .modalContent {
+    flex-direction: column;
+  }
+
   .modalContentSets {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 80px);
+    width: 100%;
+    height: unset;
+  }
+
+  .modalContentSets div {
+    max-height: 80px;
+    height: 80px;
   }
 }
