@@ -9,7 +9,7 @@ describe("Tests for the Title component", () => {
 
   it("Renders a given tag", () => {
     const tagLevel = 2;
-    render(<Title content={text} level={tagLevel} />);
+    render(<Title level={tagLevel}>{text}</Title>);
 
     const element = screen.getByText(text);
     expect(element).toBeInTheDocument();
@@ -18,7 +18,7 @@ describe("Tests for the Title component", () => {
 
   it("Renders the content of a given string", () => {
     const textToRender = "Hello World";
-    render(<Title content={textToRender} level={heading} />);
+    render(<Title level={heading}>{textToRender}</Title>);
 
     const element = screen.getByText(textToRender);
     expect(element).toBeInTheDocument();
@@ -26,7 +26,11 @@ describe("Tests for the Title component", () => {
   });
 
   it("Renders title with bold styling", () => {
-    render(<Title content={text} level={heading} bold />);
+    render(
+      <Title level={heading} bold>
+        {text}
+      </Title>
+    );
 
     const renderedText = screen.getByText(text);
 
