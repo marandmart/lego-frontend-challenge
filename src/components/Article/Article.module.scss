@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
 }
 
 .sectionHeaderContainer {
@@ -21,6 +20,19 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  gap: 0 8px;
+  p {
+    text-align: right;
+  }
+
+  h4 {
+    border-top: unset;
+  }
+
+  h4,
+  p {
+    padding: 0 16px;
+  }
 }
 
 .sectionArticle {
@@ -145,5 +157,21 @@
 @media screen and (max-width: 576px) {
   .sectionContainer {
     margin-top: 58px;
+  }
+
+  .sectionHeaderContainer {
+    flex-direction: column;
+
+    h4 {
+      border-bottom: 1px solid $brand-orange;
+    }
+
+    p {
+      padding: 8px 16px;
+    }
+  }
+
+  .border-orange {
+    border-top: unset;
   }
 }

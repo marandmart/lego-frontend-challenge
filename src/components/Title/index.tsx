@@ -4,12 +4,13 @@ interface TitleProps {
   level: 1 | 2 | 3 | 4;
   children: string;
   bold?: boolean;
+  className?: string;
 }
 
-const Title: React.FC<TitleProps> = ({ children, level, bold }) => {
+const Title: React.FC<TitleProps> = ({ children, level, bold, className }) => {
   const classNames = `${styles[`heading${level}`]}${
     bold ? ` ${styles["heading--bold"]}` : ""
-  }`;
+  }${className ? ` ${className}` : ""}`;
   const tagDict = {
     1: <h1 className={classNames}>{children}</h1>,
     2: <h2 className={classNames}>{children}</h2>,
