@@ -2,7 +2,11 @@ import Link from "../Link";
 import Text from "../Text";
 import styles from "./NavBar.module.scss";
 
-const NavBar = () => {
+interface NavBarProps {
+  vertical?: boolean;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
   const linkList = [
     { displayName: "Gifting", href: "#gifting" },
     { displayName: "Travel", href: "#travel" },
@@ -18,10 +22,16 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className={styles.navBar}>
+    <nav
+      className={`${styles.navBar}${
+        vertical ? ` ${styles["navBar--vertical"]}` : ""
+      }`}
+    >
       {linkList.map(({ displayName, href }) => (
         <Link href={href} key={href.replace(/#/g, "")}>
-          <Text as="span">{displayName}</Text>
+          <Text as="span" type={vertical ? "large" : "regular"}>
+            {displayName}
+          </Text>
         </Link>
       ))}
     </nav>

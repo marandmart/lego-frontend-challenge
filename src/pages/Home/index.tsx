@@ -14,11 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <Modal
-        isOpen={isOpen}
-        onClose={handleCloseModal}
-        children={<h1>TESTE</h1>}
-      />
+      <Modal isOpen={isOpen} onClose={handleCloseModal} />
       <Header />
       <Banner />
       <Article sectionId="gifting" borderColor="orange" />
