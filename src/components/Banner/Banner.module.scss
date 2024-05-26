@@ -22,12 +22,12 @@
 }
 
 .bannerSectionContainer {
-  max-width: $max-width;
   display: flex;
   margin: 0 auto;
   padding: 0 16px;
   align-items: end;
   justify-content: space-between;
+  gap: 0 106px;
 }
 
 .videoBtnContainer {

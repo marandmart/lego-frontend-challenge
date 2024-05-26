@@ -28,7 +28,7 @@ const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
       }`}
     >
       {linkList.map(({ displayName, href }) => (
-        <Link href={href} key={href.replace(/#/g, "")}>
+        <Link href={href} key={href.replace(/#/g, "")} inPage>
           <Text as="span" type={vertical ? "large" : "regular"}>
             {displayName}
           </Text>
