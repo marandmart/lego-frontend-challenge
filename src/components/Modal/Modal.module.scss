@@ -93,6 +93,20 @@
   border-bottom: 1px solid #525252;
   position: absolute;
   left: -106px;
-  top: 40.6vh;
+  top: 365px;
   width: 106px;
+}
+
+@media screen and (max-width: 1200px) {
+  .modalContentSets {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modalContentSets {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
