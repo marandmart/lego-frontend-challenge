@@ -186,6 +186,7 @@
   .sectionArticle {
     flex-direction: column-reverse;
   }
+
   .sectionArticle:last-child {
     flex-direction: column-reverse;
     .articleContent {
@@ -196,6 +197,18 @@
       }
     }
   }
+
+  .sectionArticle:last-child {
+    .articleContent {
+      align-items: flex-start;
+
+      p,
+      h3 {
+        text-align: left;
+      }
+    }
+  }
+
   .articleImage {
     width: 100%;
   }
