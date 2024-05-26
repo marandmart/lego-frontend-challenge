@@ -36,6 +36,21 @@
   }
 }
 
+.articleBtn {
+  svg {
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.articleBtn:hover {
+  svg {
+    stroke: $brand-blue;
+  }
+}
+
 .sectionArticle {
   display: flex;
   justify-content: space-between;

@@ -9,6 +9,8 @@
   background-color: transparent;
   transition: color 100ms ease-out, border-color 100ms ease-out;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .primary:hover {

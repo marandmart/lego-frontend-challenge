@@ -4,6 +4,7 @@ import styles from "./Article.module.scss";
 import Button from "../Button";
 import giftingOne from "../../assets/images/gifting/1.png";
 import giftingTwo from "../../assets/images/gifting/2.png";
+import ArrowRight from "./assets/ArrowRight";
 
 interface ArticleContentProps {
   titleText: string;
@@ -29,8 +30,9 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
       <div className={styles.articleContent}>
         <Title level={3}>{titleText}</Title>
         <Text>{titleBody}</Text>
-        <Button onClick={() => goTo(articleLink)}>
-          <Text>{"View Details ->"}</Text>
+        <Button onClick={() => goTo(articleLink)} className={styles.articleBtn}>
+          <Text>View Details</Text>
+          <ArrowRight />
         </Button>
       </div>
       <div className={styles.articleImage}>
