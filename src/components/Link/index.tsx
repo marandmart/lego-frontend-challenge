@@ -6,6 +6,7 @@ interface LinkProps {
   underlined?: boolean;
   inPage?: boolean;
   onClick?: () => {};
+  className?: string;
 }
 
 const Link: React.FC<LinkProps> = ({
@@ -14,6 +15,7 @@ const Link: React.FC<LinkProps> = ({
   href,
   onClick,
   inPage = false,
+  className,
 }) => {
   const handleLocalClick = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
@@ -34,7 +36,7 @@ const Link: React.FC<LinkProps> = ({
       onClick={inPage ? handleLocalClick : onClick}
       className={`${styles.link} ${
         underlined ? styles["link--underlined"] : ""
-      }`}
+      }${className ? ` ${className}` : ""}`}
     >
       {children}
     </a>

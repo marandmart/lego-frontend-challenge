@@ -8,7 +8,7 @@ import requestIcon from "../../assets/icons/shoppingbag.svg";
 import contactIcon from "../../assets/icons/message-circle.svg";
 import Button from "../Button";
 import { useContext } from "react";
-import { ModalContext } from "../../context";
+import { ModalContext } from "../../context/modal";
 
 const Header = () => {
   const { openModal } = useContext(ModalContext);

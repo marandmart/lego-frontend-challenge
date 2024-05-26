@@ -10,14 +10,14 @@ const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
   const linkList = [
     { displayName: "Gifting", href: "#gifting" },
     { displayName: "Travel", href: "#travel" },
-    { displayName: "Adults Welcome", href: "#adults_Welcome" },
-    { displayName: "Art & Home Décor", href: "#art_Home" },
+    { displayName: "Adults Welcome", href: "#adults_welcome" },
+    { displayName: "Art & Home Décor", href: "#art_home" },
     { displayName: "Space", href: "#space" },
-    { displayName: "Pop Culture", href: "#pop_Culture" },
+    { displayName: "Pop Culture", href: "#pop_culture" },
     { displayName: "Toddlers", href: "#toddlers" },
     {
       displayName: "Real World Role Playing",
-      href: "#Real_World_Role_Playing",
+      href: "#real_world_role_playing",
     },
   ];
 
@@ -28,7 +28,12 @@ const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
       }`}
     >
       {linkList.map(({ displayName, href }) => (
-        <Link href={href} key={href.replace(/#/g, "")} inPage>
+        <Link
+          href={href}
+          key={href.replace(/#/g, "")}
+          inPage
+          className={styles.link}
+        >
           <Text as="span" type={vertical ? "large" : "regular"}>
             {displayName}
           </Text>

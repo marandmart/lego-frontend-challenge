@@ -33,18 +33,15 @@ export default {
 
 - Setup husky
 - Publish do site no Netlify
-- Utilizar TypeScript
-- Utilizar Sass
 - Aplicar interações que podem ser observadas no figma
 
 # TO DO
 
 - Labels de texto na parte debaixo das fontes
-- Ajustar layout do Header para larguras abaixo de 350px
-- Tests to render class on button
-- Ajustar a seta do botão de view details
-- Ajustar o jump do titulo
-- Ajustar os erros do console
+- Aumentar o tamanho do traço nos themes do site
+- Adicionar fechar ao clicar o link e mover para o local
+- botão hover modal
+- Escrever o readme
 
 # Extra
 

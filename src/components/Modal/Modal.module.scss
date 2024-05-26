@@ -69,6 +69,13 @@
   align-items: center;
 }
 
+.modalContentSets div:hover {
+  background-image: url(./assets//background/lego_texture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
 .modalContentSets div:nth-child(n) {
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -103,7 +110,8 @@
 @media screen and (max-width: 1200px) {
   .modalContentSets {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 20%);
+    height: 20%;
   }
 }
 
@@ -122,5 +130,9 @@
   .modalContentSets div {
     max-height: 80px;
     height: 80px;
+  }
+
+  .modalContentSets div img {
+    max-height: 80px;
   }
 }

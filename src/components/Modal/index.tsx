@@ -8,6 +8,15 @@ import homeIcon from "../../assets/icons/home.svg";
 import Title from "../Title";
 import Text from "../Text";
 import NavBar from "../NavBar";
+import architecture from "./assets/logos/architecture_logo.png";
+import city from "./assets/logos/city_logo.png";
+import creator from "./assets/logos/creator_logo.png";
+import dots from "./assets/logos/dots_logo.png";
+import duplo from "./assets/logos/duplo_logo.png";
+import friends from "./assets/logos/friends_logo.png";
+import ideas from "./assets/logos/ideas_logo.png";
+import minifigures from "./assets/logos/minifigures_logo.png";
+import technic from "./assets/logos/technic_logo.png";
 
 interface ModalProps {
   isOpen: boolean;
@@ -38,6 +47,18 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     setIsVisible(false);
     setTimeout(onClose, 300);
   };
+
+  const logos = [
+    { src: architecture, alt: "architecture" },
+    { src: city, alt: "city" },
+    { src: creator, alt: "creator" },
+    { src: dots, alt: "dots" },
+    { src: duplo, alt: "duplo" },
+    { src: friends, alt: "friends" },
+    { src: ideas, alt: "ideas" },
+    { src: minifigures, alt: "minifigures" },
+    { src: technic, alt: "technic" },
+  ];
 
   return (
     <div className={`${styles.modal} ${isVisible ? styles.visible : ""}`}>
@@ -76,15 +97,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <NavBar vertical />
         </header>
         <div className={styles.modalContentSets}>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
-          <div>Algo</div>
+          {logos.map((img) => (
+            <div>
+              <img src={img.src} alt={img.alt} key={img.alt} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

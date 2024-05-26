@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Header from "../../components/Header";
 import Modal from "../../components/Modal";
 import Banner from "../../components/Banner";
-import { ModalContext } from "../../context";
+import { ModalContext } from "../../context/modal";
 import Article from "../../components/Article";
 import Footer from "../../components/Footer";
 
