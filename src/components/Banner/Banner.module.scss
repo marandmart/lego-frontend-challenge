@@ -81,6 +81,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .bannerSectionContainer {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .video {
     height: 700px;

@@ -8,11 +8,16 @@
   border: 1px solid black;
   background-color: transparent;
   transition: color 100ms ease-out, border-color 100ms ease-out;
+  cursor: pointer;
 }
 
 .primary:hover {
   color: $brand-blue;
   border-color: $brand-blue;
+
+  * {
+    color: $brand-blue;
+  }
 }
 
 .secondary {
