@@ -74,7 +74,7 @@ $header-padding: 16px;
 @media screen and (max-width: 576px) {
   .hidden {
     display: none;
-    padding: none;
+    padding: unset;
   }
 
   .buttons {
@@ -83,5 +83,16 @@ $header-padding: 16px;
   }
   .menu {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .menu,
+  .buttons {
+    gap: 0;
+  }
+
+  .headerBtn {
+    padding: 17px 0;
   }
 }
