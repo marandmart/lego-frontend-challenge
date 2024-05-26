@@ -87,7 +87,7 @@
   }
 
   .articleImage {
-    bottom: -3px;
+    bottom: -1px;
     left: 0;
     top: unset;
     right: unset;
@@ -105,6 +105,12 @@
 
 .relativeBox .flipOrientation {
   flex-direction: row;
+  .articleImage {
+    top: 0;
+    right: 0;
+    left: unset;
+    bottom: unset;
+  }
 }
 
 .border-orange {

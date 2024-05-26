@@ -56,7 +56,6 @@ const ContentSections: React.FC<ISectionArticles> = ({
   index,
 }) => {
   const shouldFlip = (index + 2) % 2 === 0 && content.length === 1;
-  console.log(shouldFlip);
   return (
     <>
       <section className={styles.sectionContainer}>
