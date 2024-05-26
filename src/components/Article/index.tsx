@@ -65,8 +65,7 @@ const ContentSections: React.FC<ContentSectionProps> = ({
       titleBody:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
       articleLink: "#",
-      // imgSrc: giftingOne,
-      imgSrc: "",
+      imgSrc: giftingOne,
       imgAltText:
         "Image of a woman and a little boy both looking at phone held by the woman",
     },
@@ -76,8 +75,7 @@ const ContentSections: React.FC<ContentSectionProps> = ({
       titleBody:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
       articleLink: "#",
-      // imgSrc: giftingTwo,
-      imgSrc: "",
+      imgSrc: giftingTwo,
       imgAltText: "Image of a woman holding tools and behind a lego spaceship",
     },
   ];

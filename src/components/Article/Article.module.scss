@@ -1,7 +1,7 @@
 @import "@/styles/variables";
 
 .sectionContainer {
-  margin-top: 131px;
+  margin-top: 130px;
 }
 
 .relativeBox {
@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 16px;
 }
 
 .sectionHeaderContainer {
@@ -26,9 +27,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: $max-width;
+  max-width: calc($max-width + 16px);
   margin: 0 auto 80px;
   gap: 180px;
+}
+
+.articleContent {
+  padding: 16px;
 }
 
 .articleImage {
@@ -97,4 +102,48 @@
 
 .border-red {
   border-bottom: 1px solid $brand-red;
+}
+
+@media screen and (max-width: 1600px) {
+  .articleImage {
+    position: relative;
+    flex: 2;
+    img {
+      width: 100%;
+    }
+  }
+
+  .articleContent {
+    flex: 1;
+    max-width: unset;
+    height: unset;
+  }
+  .sectionArticle {
+    gap: unset;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .sectionArticle {
+    flex-direction: column-reverse;
+  }
+  .sectionArticle:last-child {
+    flex-direction: column-reverse;
+    .articleContent {
+      align-items: start;
+
+      p {
+        text-align: start;
+      }
+    }
+  }
+  .articleImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sectionContainer {
+    margin-top: 58px;
+  }
 }
