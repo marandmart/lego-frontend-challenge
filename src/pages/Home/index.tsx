@@ -19,23 +19,25 @@ const Home = () => {
       <Modal isOpen={isOpen} onClose={handleCloseModal} />
       <Header />
       <Banner />
-      {sectionArticles.map(
-        ({
-          sectionTitle,
-          sectionHeaderText,
-          sectionId,
-          borderColor,
-          content,
-        }) => (
-          <Article
-            sectionTitle={sectionTitle}
-            sectionHeaderText={sectionHeaderText}
-            borderColor={borderColor}
-            sectionId={sectionId}
-            content={content}
-          />
-        )
-      )}
+      <main>
+        {sectionArticles.map(
+          ({
+            sectionTitle,
+            sectionHeaderText,
+            sectionId,
+            borderColor,
+            content,
+          }) => (
+            <Article
+              sectionTitle={sectionTitle}
+              sectionHeaderText={sectionHeaderText}
+              borderColor={borderColor}
+              sectionId={sectionId}
+              content={content}
+            />
+          )
+        )}
+      </main>
       <Footer />
     </>
   );

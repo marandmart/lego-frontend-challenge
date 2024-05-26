@@ -49,7 +49,7 @@ const ContentSections: React.FC<ISectionArticles> = ({
   content,
 }) => {
   return (
-    <main>
+    <>
       <section className={styles.sectionContainer}>
         <header id={sectionId} className={styles.sectionHeader}>
           <div className={styles.sectionHeaderContainer}>
@@ -76,7 +76,7 @@ const ContentSections: React.FC<ISectionArticles> = ({
           )}
         </div>
       </section>
-    </main>
+    </>
   );
 };
 
