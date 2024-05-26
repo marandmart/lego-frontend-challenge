@@ -42,12 +42,14 @@
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    transition: transform 300ms ease-out, stroke 100ms ease-out;
   }
 }
 
 .articleBtn:hover {
   svg {
     stroke: $brand-blue;
+    transform: translateX(10px);
   }
 }
 

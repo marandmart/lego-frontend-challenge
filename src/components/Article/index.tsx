@@ -31,7 +31,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
         <Title level={3}>{titleText}</Title>
         <Text>{titleBody}</Text>
         <Button onClick={() => goTo(articleLink)} className={styles.articleBtn}>
-          <Text>View Details</Text>
+          <Text>View details</Text>
           <ArrowRight />
         </Button>
       </div>
