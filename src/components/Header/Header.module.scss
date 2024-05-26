@@ -74,10 +74,12 @@ $header-padding: 16px;
 @media screen and (max-width: 576px) {
   .hidden {
     display: none;
+    padding: none;
   }
 
   .buttons {
     margin-left: 0;
+    flex-direction: row-reverse;
   }
   .menu {
     margin-right: 0;

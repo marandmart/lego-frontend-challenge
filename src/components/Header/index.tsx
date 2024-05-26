@@ -33,8 +33,8 @@ const Header = () => {
         </div>
         <NavBar />
         <div className={styles.buttons}>
-          <Button type="text">
-            <div className={`${styles.headerBtn} ${styles.hidden}`}>
+          <Button type="text" className={styles.hidden}>
+            <div className={styles.headerBtn}>
               <img src={contactIcon} alt="Contact bubble icon" />
               <Text as="span" type="small">
                 Contact Us
