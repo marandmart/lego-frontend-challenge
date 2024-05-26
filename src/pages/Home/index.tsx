@@ -5,6 +5,7 @@ import Banner from "../../components/Banner";
 import { ModalContext } from "../../context/modal";
 import Article from "../../components/Article";
 import Footer from "../../components/Footer";
+import { sectionArticles } from "./data";
 
 const Home = () => {
   const { closeModal, isOpen } = useContext(ModalContext);
@@ -18,7 +19,23 @@ const Home = () => {
       <Modal isOpen={isOpen} onClose={handleCloseModal} />
       <Header />
       <Banner />
-      <Article sectionId="gifting" borderColor="orange" />
+      {sectionArticles.map(
+        ({
+          sectionTitle,
+          sectionHeaderText,
+          sectionId,
+          borderColor,
+          content,
+        }) => (
+          <Article
+            sectionTitle={sectionTitle}
+            sectionHeaderText={sectionHeaderText}
+            borderColor={borderColor}
+            sectionId={sectionId}
+            content={content}
+          />
+        )
+      )}
       <Footer />
     </>
   );

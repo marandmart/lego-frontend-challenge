@@ -11,7 +11,7 @@ import toddlersTwo from "../../../assets/images/toddlers/2.png";
 import realWorldOne from "../../../assets/images/real_world/1.png";
 import realWorldTwo from "../../../assets/images/real_world/2.png";
 
-interface ArticleData {
+interface IArticle {
   id: string;
   titleText: string;
   titleBody: string;
@@ -20,18 +20,18 @@ interface ArticleData {
   imgAltText: string;
 }
 
-interface SectionContentProps {
-  gifting: ArticleData[];
-  travel: ArticleData[];
-  adults_welcome: ArticleData[];
-  art_home: ArticleData[];
-  space: ArticleData[];
-  pop_culture: ArticleData[];
-  toddlers: ArticleData[];
-  real_world_role_playing: ArticleData[];
+export interface ISectionContent {
+  gifting: IArticle[];
+  travel: IArticle[];
+  adults_welcome: IArticle[];
+  art_home: IArticle[];
+  space: IArticle[];
+  pop_culture: IArticle[];
+  toddlers: IArticle[];
+  real_world_role_playing: IArticle[];
 }
 
-const sectionContent: SectionContentProps = {
+const sectionContent: ISectionContent = {
   gifting: [
     {
       id: "shdaljfhaklfdjksfjk",
@@ -166,44 +166,76 @@ const sectionContent: SectionContentProps = {
   ],
 };
 
-export const sectionArticles = () => [
+export interface ISectionArticles {
+  sectionId: string;
+  borderColor: string;
+  sectionTitle: string;
+  sectionHeaderText: string;
+  content: IArticle[];
+}
+
+export const sectionArticles = [
   {
     sectionId: "gifting",
+    sectionTitle: "GIFTING",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "orange",
     content: sectionContent["gifting"],
   },
   {
     sectionId: "travel",
+    sectionTitle: "TRAVEL",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "green",
     content: sectionContent["travel"],
   },
   {
     sectionId: "adults_welcome",
+    sectionTitle: "ADULTS WELCOME",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "blue",
     content: sectionContent["adults_welcome"],
   },
   {
     sectionId: "art_home",
+    sectionTitle: "ART & HOME DÉCOR",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "grey",
     content: sectionContent["art_home"],
   },
   {
     sectionId: "space",
+    sectionTitle: "SPACE",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "black",
     content: sectionContent["space"],
   },
   {
     sectionId: "pop_culture",
+    sectionTitle: "POP CULTURE",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "pink",
     content: sectionContent["pop_culture"],
   },
   {
     sectionId: "toddlers",
+    sectionTitle: "TODDLERS",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "yellow",
     content: sectionContent["toddlers"],
   },
   {
     sectionId: "real_world_role_playing",
+    sectionTitle: "REAL WORLD ROLE PLAYING",
+    sectionHeaderText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     borderColor: "red",
     content: sectionContent["real_world_role_playing"],
   },
