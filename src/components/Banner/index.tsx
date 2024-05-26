@@ -10,13 +10,9 @@ import ScrollDown from "./assets/ScrollDown";
 const Banner = () => {
   const [soundOn, setSoundOn] = useState<boolean>(false);
   return (
-    <section>
+    <section className={styles.banner}>
       <div className={styles.video}>
         <div className={styles.bannerSectionContainer}>
-          <div className={styles.message}>
-            <Text type="large">Welcome to the</Text>
-            <Text type="large">Play Matters Interactive Lookbook</Text>
-          </div>
           <div className={styles.videoBtnContainer}>
             <Button
               type="circular"
@@ -39,6 +35,12 @@ const Banner = () => {
             </Text>
             <ScrollDown />
           </div>
+        </div>
+      </div>
+      <div className={styles.message}>
+        <div className={styles.messageContainer}>
+          <Text type="large">Welcome to the</Text>
+          <Text type="large">Play Matters Interactive Lookbook</Text>
         </div>
       </div>
     </section>

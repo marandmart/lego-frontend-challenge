@@ -1,5 +1,9 @@
 @import "@/styles/variables";
 
+.banner {
+  position: relative;
+}
+
 .video {
   height: 100vh;
   background-color: $color4;
@@ -8,26 +12,16 @@
   align-items: end;
   position: relative;
 
-  p {
-    font-size: 80px;
-    line-height: 100px;
-    color: white;
-    text-align: left;
-  }
-
-  .btnContent,
-  .message {
-    margin-bottom: 120px;
-  }
+  padding-bottom: 120px;
 }
 
 .bannerSectionContainer {
   display: flex;
-  margin: 0 auto;
   padding: 0 16px;
   align-items: end;
-  justify-content: space-between;
-  gap: 0 106px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 120px;
 }
 
 .videoBtnContainer {
@@ -51,11 +45,23 @@
 }
 
 .message {
+  width: 100%;
+  position: absolute;
+  bottom: 120px;
+  padding: 0 16px;
+
+  p {
+    font-size: 80px;
+    line-height: 100px;
+    color: white;
+    text-align: left;
+  }
+}
+
+.messageContainer {
   max-width: $max-width;
   margin: 0 auto;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .scroll-message {
@@ -67,5 +73,47 @@
   gap: 0 32px;
   span {
     color: white;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .messageContainer {
+    padding-right: calc(50vw - 20%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .video {
+    height: 700px;
+    margin-top: 91px;
+  }
+
+  .bannerSectionContainer {
+    margin-right: unset;
+  }
+
+  .scroll-message {
+    display: none;
+  }
+
+  .message {
+    position: relative;
+    bottom: unset;
+    padding: 16px;
+    p {
+      font-size: 38px;
+      line-height: 50px;
+      color: unset;
+    }
+  }
+  .messageContainer {
+    padding-right: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .video {
+    height: 375px;
+    padding-bottom: 30px;
   }
 }
