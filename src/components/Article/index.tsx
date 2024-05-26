@@ -11,6 +11,7 @@ interface ArticleContentProps {
   articleLink: string;
   imgSrc: string;
   imgAltText: string;
+  flip: boolean;
 }
 
 const ArticleContent: React.FC<ArticleContentProps> = ({
@@ -19,13 +20,18 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
   articleLink,
   imgSrc,
   imgAltText,
+  flip,
 }) => {
   const goTo = (url: string) => {
     console.log(url);
   };
 
   return (
-    <article className={styles.sectionArticle}>
+    <article
+      className={`${styles.sectionArticle}${
+        flip ? ` ${styles.flipOrientation}` : ""
+      }`}
+    >
       <div className={styles.articleContent}>
         <Title level={3}>{titleText}</Title>
         <Text>{titleBody}</Text>
@@ -47,7 +53,10 @@ const ContentSections: React.FC<ISectionArticles> = ({
   sectionId,
   borderColor,
   content,
+  index,
 }) => {
+  const shouldFlip = (index + 2) % 2 === 0 && content.length === 1;
+  console.log(shouldFlip);
   return (
     <>
       <section className={styles.sectionContainer}>
@@ -71,6 +80,7 @@ const ContentSections: React.FC<ISectionArticles> = ({
                 imgSrc={imgSrc}
                 imgAltText={imgAltText}
                 key={id}
+                flip={shouldFlip}
               />
             )
           )}

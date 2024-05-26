@@ -172,6 +172,7 @@ export interface ISectionArticles {
   sectionTitle: string;
   sectionHeaderText: string;
   content: IArticle[];
+  index: number;
 }
 
 export const sectionArticles = [

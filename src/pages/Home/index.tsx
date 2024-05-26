@@ -21,19 +21,23 @@ const Home = () => {
       <Banner />
       <main>
         {sectionArticles.map(
-          ({
-            sectionTitle,
-            sectionHeaderText,
-            sectionId,
-            borderColor,
-            content,
-          }) => (
+          (
+            {
+              sectionTitle,
+              sectionHeaderText,
+              sectionId,
+              borderColor,
+              content,
+            },
+            index
+          ) => (
             <Article
               sectionTitle={sectionTitle}
               sectionHeaderText={sectionHeaderText}
               borderColor={borderColor}
               sectionId={sectionId}
               content={content}
+              index={index}
             />
           )
         )}

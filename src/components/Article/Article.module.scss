@@ -103,6 +103,10 @@
   max-width: 586px;
 }
 
+.relativeBox .flipOrientation {
+  flex-direction: row;
+}
+
 .border-orange {
   border-top: 1px solid $brand-orange;
   border-bottom: 1px solid $brand-orange;
