@@ -1,0 +1,11 @@
+@import "@/styles/variables";
+
+.footer {
+  max-width: 576px;
+  padding: 20px 0;
+  margin: 0 auto;
+  p {
+    text-align: center;
+    color: $color3;
+  }
+}
