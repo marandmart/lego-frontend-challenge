@@ -8,6 +8,14 @@
   position: relative;
   margin: 0 auto;
   max-width: 1920px;
+
+  .sectionArticle {
+    margin-bottom: 80px;
+  }
+
+  .sectionArticle:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .sectionHeader {
@@ -72,7 +80,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 529px;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
