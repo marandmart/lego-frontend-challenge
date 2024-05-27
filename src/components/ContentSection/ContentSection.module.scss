@@ -1,4 +1,5 @@
 @import "@/styles/variables";
+@import "@/styles/borders";
 
 .sectionContainer {
   margin-top: 130px;
@@ -133,46 +134,6 @@
     left: unset;
     bottom: unset;
   }
-}
-
-.border-orange {
-  border-top: 1px solid $brand-orange;
-  border-bottom: 1px solid $brand-orange;
-}
-
-.border-green {
-  border-top: 1px solid $brand-green;
-  border-bottom: 1px solid $brand-green;
-}
-
-.border-blue {
-  border-top: 1px solid $brand-blue;
-  border-bottom: 1px solid $brand-blue;
-}
-
-.border-grey {
-  border-top: 1px solid $background-3;
-  border-bottom: 1px solid $background-3;
-}
-
-.border-black {
-  border-top: 1px solid $color1;
-  border-bottom: 1px solid $color1;
-}
-
-.border-pink {
-  border-top: 1px solid #fc36a5;
-  border-bottom: 1px solid #fc36a5;
-}
-
-.border-yellow {
-  border-top: 1px solid $brand-yellow;
-  border-bottom: 1px solid $brand-yellow;
-}
-
-.border-red {
-  border-top: 1px solid $brand-red;
-  border-bottom: 1px solid $brand-red;
 }
 
 @media screen and (min-width: 992px) {
