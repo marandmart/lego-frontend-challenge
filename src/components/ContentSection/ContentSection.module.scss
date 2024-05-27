@@ -262,7 +262,15 @@
     border-top: unset;
   }
 
-  .articleContent {
-    padding-bottom: 0;
+  .sectionArticle {
+    .articleContent {
+      padding-bottom: 0;
+    }
+  }
+
+  .sectionArticle:last-child {
+    .articleContent {
+      padding-bottom: 16px;
+    }
   }
 }
