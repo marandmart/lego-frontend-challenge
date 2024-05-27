@@ -38,6 +38,7 @@ const Home = () => {
               sectionId={sectionId}
               content={content}
               index={index}
+              key={`main-${sectionId}`}
             />
           )
         )}

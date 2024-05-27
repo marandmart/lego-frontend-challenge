@@ -98,8 +98,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
         </header>
         <div className={styles.modalContentSets}>
           {logos.map((img) => (
-            <div>
-              <img src={img.src} alt={img.alt} key={img.alt} />
+            <div key={img.alt}>
+              <img src={img.src} alt={img.alt} />
             </div>
           ))}
         </div>

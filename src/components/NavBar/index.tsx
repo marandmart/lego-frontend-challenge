@@ -30,7 +30,11 @@ const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
       {linkList.map(({ displayName, href }) => (
         <Link
           href={href}
-          key={href.replace(/#/g, "")}
+          key={
+            vertical
+              ? `vertical-${href.replace(/#/g, "")}`
+              : href.replace(/#/g, "")
+          }
           inPage
           className={styles.link}
         >
