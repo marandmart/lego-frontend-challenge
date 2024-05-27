@@ -28,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   const handleClose = () => {
-    setTimeout(onClose, 300);
+    onClose();
   };
 
   return (
