@@ -3,7 +3,7 @@ import Text from "../Text";
 import styles from "./Article.module.scss";
 import Button from "../Button";
 import ArrowRight from "./assets/ArrowRight";
-import { ISectionArticles } from "../../pages/Home/data";
+import { ISectionArticles } from "../../context/data";
 
 interface ArticleContentProps {
   titleText: string;

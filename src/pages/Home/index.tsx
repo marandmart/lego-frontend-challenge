@@ -5,7 +5,7 @@ import Banner from "../../components/Banner";
 import { ModalContext } from "../../context/modal";
 import Article from "../../components/Article";
 import Footer from "../../components/Footer";
-import { sectionArticles } from "./data";
+import { sectionArticles } from "../../context/data";
 
 const Home = () => {
   const { closeModal, isOpen } = useContext(ModalContext);

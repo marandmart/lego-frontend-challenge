@@ -1,15 +1,15 @@
-import giftingOne from "../../../assets/images/gifting/1.png";
-import giftingTwo from "../../../assets/images/gifting/2.png";
-import travelOne from "../../../assets/images/travel/1.png";
-import travelTwo from "../../../assets/images/travel/2.png";
-import adultsOne from "../../../assets/images/adults_welcome/1.png";
-import artHomeOne from "../../../assets/images/art_home/1.png";
-import spaceOne from "../../../assets/images/space/1.png";
-import popCultureOne from "../../../assets/images/pop_culture/1.png";
-import toddlersOne from "../../../assets/images/toddlers/1.png";
-import toddlersTwo from "../../../assets/images/toddlers/2.png";
-import realWorldOne from "../../../assets/images/real_world/1.png";
-import realWorldTwo from "../../../assets/images/real_world/2.png";
+import giftingOne from "../../assets/images/gifting/1.png";
+import giftingTwo from "../../assets/images/gifting/2.png";
+import travelOne from "../../assets/images/travel/1.png";
+import travelTwo from "../../assets/images/travel/2.png";
+import adultsOne from "../../assets/images/adults_welcome/1.png";
+import artHomeOne from "../../assets/images/art_home/1.png";
+import spaceOne from "../../assets/images/space/1.png";
+import popCultureOne from "../../assets/images/pop_culture/1.png";
+import toddlersOne from "../../assets/images/toddlers/1.png";
+import toddlersTwo from "../../assets/images/toddlers/2.png";
+import realWorldOne from "../../assets/images/real_world/1.png";
+import realWorldTwo from "../../assets/images/real_world/2.png";
 
 interface IArticle {
   id: string;
