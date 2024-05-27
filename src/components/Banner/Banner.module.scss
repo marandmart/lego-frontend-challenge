@@ -120,11 +120,24 @@
   .messageContainer {
     padding-right: unset;
   }
+
+  .messageContainer {
+    p {
+      font-weight: 400;
+      display: inline;
+    }
+    p:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
   .video {
     height: 375px;
     padding-bottom: 16px;
+  }
+  .message {
+    padding-bottom: 0;
   }
 }
