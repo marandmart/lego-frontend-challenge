@@ -190,6 +190,8 @@
 @media screen and (max-width: 992px) {
   .sectionArticle {
     flex-direction: column-reverse;
+    gap: unset;
+    margin-bottom: 80px;
   }
 
   .sectionArticle:last-child {
@@ -238,10 +240,5 @@
 
   .border-orange {
     border-top: unset;
-  }
-
-  .sectionArticle {
-    gap: unset;
-    margin-bottom: 80px;
   }
 }

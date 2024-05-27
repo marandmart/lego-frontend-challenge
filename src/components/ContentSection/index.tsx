@@ -1,6 +1,6 @@
 import Title from "../Title";
 import Text from "../Text";
-import styles from "./Article.module.scss";
+import styles from "./ContentSection.module.scss";
 import Button from "../Button";
 import ArrowRight from "./assets/ArrowRight";
 import { ISectionArticles } from "../../context/data";
@@ -47,7 +47,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
   );
 };
 
-const ContentSections: React.FC<ISectionArticles> = ({
+const ContentSection: React.FC<ISectionArticles> = ({
   sectionTitle,
   sectionHeaderText,
   sectionId,
@@ -89,4 +89,4 @@ const ContentSections: React.FC<ISectionArticles> = ({
   );
 };
 
-export default ContentSections;
+export default ContentSection;

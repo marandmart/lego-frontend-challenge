@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Modal from "../../components/Modal";
 import Banner from "../../components/Banner";
 import { ModalContext } from "../../context/modal";
-import Article from "../../components/Article";
+import ContentSection from "../../components/ContentSection";
 import Footer from "../../components/Footer";
 import { sectionArticles } from "../../context/data";
 
@@ -31,7 +31,7 @@ const Home = () => {
             },
             index
           ) => (
-            <Article
+            <ContentSection
               sectionTitle={sectionTitle}
               sectionHeaderText={sectionHeaderText}
               borderColor={borderColor}
