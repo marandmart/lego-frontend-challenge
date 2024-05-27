@@ -175,6 +175,18 @@
   border-bottom: 1px solid $brand-red;
 }
 
+@media screen and (min-width: 992px) {
+  .relativeBox {
+    .sectionArticle--max-height {
+      max-height: 528px;
+    }
+  }
+
+  .sectionArticle {
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .articleImage {
     position: relative;

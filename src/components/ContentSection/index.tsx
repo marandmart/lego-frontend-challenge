@@ -12,6 +12,7 @@ interface ArticleContentProps {
   imgSrc: string;
   imgAltText: string;
   flip: boolean;
+  heightAdjustment: boolean;
 }
 
 const ArticleContent: React.FC<ArticleContentProps> = ({
@@ -21,6 +22,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
   imgSrc,
   imgAltText,
   flip,
+  heightAdjustment,
 }) => {
   const goTo = (url: string) => {
     console.log(url);
@@ -30,7 +32,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
     <article
       className={`${styles.sectionArticle}${
         flip ? ` ${styles.flipOrientation}` : ""
-      }`}
+      }${heightAdjustment ? ` ${styles["sectionArticle--max-height"]}` : ""}`}
     >
       <div className={styles.articleContent}>
         <Title level={3}>{titleText}</Title>
@@ -56,6 +58,7 @@ const ContentSection: React.FC<ISectionArticles> = ({
   index,
 }) => {
   const shouldFlip = (index + 2) % 2 === 0 && content.length === 1;
+  const heightAdjustment = content.length === 1;
   return (
     <>
       <section className={styles.sectionContainer}>
@@ -80,6 +83,7 @@ const ContentSection: React.FC<ISectionArticles> = ({
                 imgAltText={imgAltText}
                 key={id}
                 flip={shouldFlip}
+                heightAdjustment={heightAdjustment}
               />
             )
           )}
