@@ -53,19 +53,19 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           </div>
           <div className={styles.modalHeaderBtns}>
             <Button type="text">
-              <div className={styles.modalHeaderBtn}>
+              <div className={`${styles.modalHeaderBtn} ${styles.bar}`}>
                 <img src={homeIcon} alt="Contact bubble icon" />
                 <Title level={4}>Home</Title>
               </div>
             </Button>
             <Button type="text">
-              <div className={styles.modalHeaderBtn}>
+              <div className={`${styles.modalHeaderBtn} ${styles.bar}`}>
                 <img src={requestIcon} alt="Request icon" />
                 <Title level={4}>Requests</Title>
               </div>
             </Button>
             <Button type="text">
-              <div className={styles.modalHeaderBtn}>
+              <div className={`${styles.modalHeaderBtn} ${styles.bar}`}>
                 <img src={contactIcon} alt="Contact bubble icon" />
                 <Title level={4}>Contact Us</Title>
               </div>

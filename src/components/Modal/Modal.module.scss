@@ -87,6 +87,9 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  button {
+    width: 100%;
+  }
 }
 
 .modalHeaderBtn {
@@ -107,11 +110,48 @@
   width: 200px;
 }
 
+.modalHeaderBtns .bar {
+  position: relative;
+  overflow: visible;
+}
+
+.modalHeaderBtns .bar::before {
+  content: "";
+  position: absolute;
+  right: -200px;
+  overflow: visible;
+  top: 0;
+  width: 2000px;
+  height: 100%;
+  background-color: $brand-blue;
+  transition: right 0.3s ease;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.modalHeaderBtns .bar:hover::before {
+  right: -100px;
+}
+
+.modalHeaderBtns .bar:not(:hover)::before {
+  right: 2000px;
+}
+
+@media screen and (max-width: 1400px) {
+  .modalHeaderBtns .bar:hover::before {
+    right: -50px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .modalContentSets {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 20%);
     height: 20%;
+  }
+
+  .modalHeaderBtns .bar:hover::before {
+    right: -20px;
   }
 }
 
@@ -134,5 +174,10 @@
 
   .modalContentSets div img {
     max-height: 80px;
+  }
+
+  .modalHeaderBtns .bar::before {
+    content: "";
+    height: unset;
   }
 }
