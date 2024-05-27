@@ -54,7 +54,7 @@
 }
 
 .modalContentSets {
-  width: 80%;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -102,9 +102,9 @@
 .themeLine {
   border-bottom: 1px solid #525252;
   position: absolute;
-  left: -91px;
+  left: -184px;
   top: 365px;
-  width: 106px;
+  width: 200px;
 }
 
 @media screen and (max-width: 1200px) {
