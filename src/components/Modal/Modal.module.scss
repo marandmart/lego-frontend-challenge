@@ -167,6 +167,24 @@
     height: unset;
   }
 
+  .modalHeaderBtns {
+    margin: 16px 0 24px;
+  }
+
+  .modalClose {
+    margin: 20px 0;
+  }
+
+  .themeTitle p {
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 300;
+  }
+
+  .themeLine {
+    top: 300px;
+  }
+
   .modalContentSets div {
     max-height: 80px;
     height: 80px;
@@ -179,5 +197,11 @@
   .modalHeaderBtns .bar::before {
     content: "";
     height: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .themeLine {
+    top: 289px;
   }
 }
