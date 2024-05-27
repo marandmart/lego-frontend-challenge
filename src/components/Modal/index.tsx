@@ -43,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             </button>
           </div>
           <div className={styles.modalHeaderBtns}>
-            <Button type="text">
+            <Button type="text" onClick={onClose}>
               <div className={`${styles.modalHeaderBtn} ${styles.bar}`}>
                 <img src={homeIcon} alt="Contact bubble icon" />
                 <Title level={4}>Home</Title>
