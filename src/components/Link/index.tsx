@@ -5,7 +5,7 @@ interface LinkProps {
   href: string;
   underlined?: boolean;
   inPage?: boolean;
-  onClick?: () => {};
+  onClick?: () => void;
   className?: string;
 }
 
@@ -27,6 +27,9 @@ const Link: React.FC<LinkProps> = ({
       const y =
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
+      if (onClick) {
+        onClick();
+      }
     }
   };
 

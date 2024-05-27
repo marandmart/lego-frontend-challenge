@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import Link from "../Link";
 import Text from "../Text";
 import styles from "./NavBar.module.scss";
+import { ModalContext } from "../../context/modal";
 
 interface NavBarProps {
   vertical?: boolean;
@@ -21,6 +23,14 @@ const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
     },
   ];
 
+  const { closeModal } = useContext(ModalContext);
+
+  const handleClickModalLink = () => {
+    if (vertical) {
+      closeModal();
+    }
+  };
+
   return (
     <nav
       className={`${styles.navBar}${
@@ -37,6 +47,7 @@ const NavBar: React.FC<NavBarProps> = ({ vertical }) => {
           }
           inPage
           className={styles.link}
+          onClick={handleClickModalLink}
         >
           <Text as="span" type={vertical ? "large" : "regular"}>
             {displayName}

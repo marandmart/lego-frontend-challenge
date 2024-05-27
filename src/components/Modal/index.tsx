@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import styles from "./Modal.module.scss";
 import brandLogo from "../../assets/images/Brand Logo.png";
 import Button from "../Button";
@@ -16,8 +16,6 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
-  const [isVisible, setIsVisible] = useState(isOpen);
-
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -29,19 +27,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     };
   }, [isOpen]);
 
-  useEffect(() => {
-    if (isOpen) {
-      setIsVisible(true);
-    }
-  }, [isOpen]);
-
   const handleClose = () => {
-    setIsVisible(false);
     setTimeout(onClose, 300);
   };
 
   return (
-    <div className={`${styles.modal} ${isVisible ? styles.visible : ""}`}>
+    <div className={`${styles.modal} ${isOpen ? styles.visible : ""}`}>
       <div className={styles.modalContent}>
         <div className={styles.themeLine}></div>
         <header className={styles.modalHeader}>
