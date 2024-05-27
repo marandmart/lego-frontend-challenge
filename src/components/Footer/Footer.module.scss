@@ -9,3 +9,9 @@
     color: $color3;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 16px;
+  }
+}
