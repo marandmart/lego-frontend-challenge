@@ -10,14 +10,14 @@ const ScrollDown = () => {
       <g filter="url(#filter0_d_1205_9494)">
         <path
           d="M9 16L14 21L19 16"
-          stroke="white"
+          stroke="black"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M9 9L14 14L19 9"
-          stroke="white"
+          stroke="black"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
