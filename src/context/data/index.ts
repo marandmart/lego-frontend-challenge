@@ -37,7 +37,7 @@ const sectionContent: ISectionContent = {
       id: "shdaljfhaklfdjksfjk",
       titleText: "Toys perfect for birthday gift-giving season in Spring",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Spring into birthday celebrations with our vibrant collection of Lego sets, designed to inspire creativity and make every gift unforgettable this season.",
       articleLink: "#",
       imgSrc: giftingOne,
       imgAltText:
@@ -47,7 +47,7 @@ const sectionContent: ISectionContent = {
       id: "fanklsnuwbnruvf",
       titleText: "Gifts for Mom",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Show Mom how much she means to you with a thoughtful Lego set that offers a relaxing build and a beautiful display piece she'll cherish.",
       articleLink: "#",
       imgSrc: giftingTwo,
       imgAltText: "Image of a woman holding tools and behind a lego spaceship",
@@ -180,7 +180,7 @@ export const sectionArticles = [
     sectionId: "gifting",
     sectionTitle: "GIFTING",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Discover the perfect Lego set to spark joy and creativity for builders of all ages, making every occasion a memorable one.",
     borderColor: "orange",
     content: sectionContent["gifting"],
   },

@@ -33,7 +33,10 @@
   justify-content: space-between;
   gap: 0 8px;
   p {
-    text-align: right;
+    text-align: left;
+    @media screen and (min-width: 576px) {
+      text-align: right;
+    }
   }
 
   h4 {
