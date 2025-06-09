@@ -59,7 +59,7 @@ const sectionContent: ISectionContent = {
       titleText:
         "Travel the world no matter where you are. No Passport needed.",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Imagine standing amidst ancient wonders or towering cityscapes, all from your living room. Our LEGO Architecture series brings the world's most iconic landmarks, like the majestic Coliseum, right to your fingertips, no plane ticket required.",
       articleLink: "#",
       imgSrc: travelOne,
       imgAltText: "Imagem do coliseu feito de lego em cima de uma mesa",
@@ -69,7 +69,7 @@ const sectionContent: ISectionContent = {
       titleText:
         "Fun accessories to take with you on your travels or keep kids entertained",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Keep boredom at bay on long journeys with our awesome range of LEGO accessories. From Boba Fett keychains to mini-builds that fit in your pocket, these fun companions are perfect for keeping little hands (and big ones!) busy, no matter where your adventures take you.",
       articleLink: "#",
       imgSrc: travelTwo,
       imgAltText:
@@ -81,7 +81,7 @@ const sectionContent: ISectionContent = {
       id: "bfjsadafbhosdfadsij",
       titleText: "For the Kids at Heart who love to unplug, unbox and unwind",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Unleash your inner child and find a relaxing escape from the digital world with intricate LEGO sets designed for adult builders. Immerse yourself in the satisfying click of the bricks as you bring beloved characters like Sonic the Hedgehog to life.",
       articleLink: "#",
       imgSrc: adultsOne,
       imgAltText: "Uma mulher brincando com um brinquedo lego do sonic",
@@ -93,7 +93,7 @@ const sectionContent: ISectionContent = {
       titleText:
         "Playful ideas for refreshing your space while tapping into your more creative side",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Infuse your home with a touch of whimsical charm by building unique LEGO décor pieces, like a beautiful botanical bouquet that will never wilt. Embrace the mindful process of creation and showcase your personality with these delightful, buildable accents.",
       articleLink: "#",
       imgSrc: artHomeOne,
       imgAltText: "Um buque de flores com as petalas feitas de lego",
@@ -104,7 +104,7 @@ const sectionContent: ISectionContent = {
       id: "fjhkbdsfhjsdghjksdfg",
       titleText: "Capture the wonders of space and exploration",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Embark on an astronomical journey from the comfort of your home with LEGO sets inspired by real-world space missions, like the iconic Apollo program. Recreate historic moments and explore the vastness of the cosmos, brick by fascinating brick.",
       articleLink: "#",
       imgSrc: spaceOne,
       imgAltText:
@@ -116,7 +116,7 @@ const sectionContent: ISectionContent = {
       id: "fkjdlsgjsbjgoihuweg",
       titleText: "Recreate scenes from your favorite movies and TV series",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Step into the worlds you love and bring iconic moments to life with LEGO sets inspired by beloved pop culture phenomena. From the familiar comforts of Central Perk to thrilling scenes from your favorite blockbusters, you can build and relive cinematic magic.",
       articleLink: "#",
       imgSrc: popCultureOne,
       imgAltText:
@@ -128,16 +128,16 @@ const sectionContent: ISectionContent = {
       id: "dfgskjafsklbagb",
       titleText: "Waterproof toys for toddlers and beyond",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Spark joyful moments and imaginative play with LEGO DUPLO, perfect for little hands exploring new environments. These versatile bricks encourage connection and creativity, making playtime special no matter where the fun unfolds.",
       articleLink: "#",
       imgSrc: toddlersOne,
       imgAltText: "Um pai brincando com seu filho no banho.",
     },
     {
       id: "fdjdafgjbabokqffboj",
-      titleText: "xx TBD",
+      titleText: "Inspire young minds and foster early learning",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Encourage a love for stories and imaginative worlds with LEGO Magazine, perfect for shared moments of discovery and growth. Watching your little ones engage with vibrant characters and explore new ideas together nurtures their budding creativity and sets the stage for a lifetime of learning.",
       articleLink: "#",
       imgSrc: toddlersTwo,
       imgAltText: "Duas crianças lendo uma revista lego.",
@@ -148,16 +148,16 @@ const sectionContent: ISectionContent = {
       id: "afgbegoqgefioqbioqfe",
       titleText: "Celebrating the everyday heroes",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Inspire dreams of making a difference with LEGO City sets that celebrate a diverse range of real-world professions and community helpers. From brave firefighters to dedicated doctors, children can explore exciting careers and imagine themselves as the heroes of their own stories.",
       articleLink: "#",
       imgSrc: realWorldOne,
       imgAltText: "Um menino brincando com legos no chão",
     },
     {
       id: "geboboqqegbougeqbuobgqeou",
-      titleText: "xxxxx TBD",
+      titleText: "Build a diverse world of characters and careers",
       titleBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.",
+        "Populate your LEGO city with an array of diverse minifigures, each representing vital professions that keep our communities thriving. From the caring doctor to the busy construction worker and the steadfast police chief, these figures encourage inclusive storytelling and endless imaginative scenarios.",
       articleLink: "#",
       imgSrc: realWorldTwo,
       imgAltText:
@@ -188,7 +188,7 @@ export const sectionArticles = [
     sectionId: "travel",
     sectionTitle: "TRAVEL",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Journey through the world's wonders with LEGO sets designed for the ultimate explorer.",
     borderColor: "green",
     content: sectionContent["travel"],
   },
@@ -196,7 +196,7 @@ export const sectionArticles = [
     sectionId: "adults_welcome",
     sectionTitle: "ADULTS WELCOME",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Rediscover the joy of building with LEGO sets designed for the grown-up in you.",
     borderColor: "blue",
     content: sectionContent["adults_welcome"],
   },
@@ -204,7 +204,7 @@ export const sectionArticles = [
     sectionId: "art_home",
     sectionTitle: "ART & HOME DÉCOR",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Unleash your inner artist and transform your space with stunning LEGO creations designed to be displayed.",
     borderColor: "grey",
     content: sectionContent["art_home"],
   },
@@ -212,7 +212,7 @@ export const sectionArticles = [
     sectionId: "space",
     sectionTitle: "SPACE",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Blast off into an intergalactic adventure with LEGO sets that take you to the stars and beyond.",
     borderColor: "black",
     content: sectionContent["space"],
   },
@@ -220,7 +220,7 @@ export const sectionArticles = [
     sectionId: "pop_culture",
     sectionTitle: "POP CULTURE",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Dive into your favorite movies, TV shows, and games with LEGO sets that bring iconic characters and scenes to life.",
     borderColor: "pink",
     content: sectionContent["pop_culture"],
   },
@@ -228,7 +228,7 @@ export const sectionArticles = [
     sectionId: "toddlers",
     sectionTitle: "TODDLERS",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Spark early creativity and learning with LEGO DUPLO sets, perfectly sized for little hands and big imaginations.",
     borderColor: "yellow",
     content: sectionContent["toddlers"],
   },
@@ -236,7 +236,7 @@ export const sectionArticles = [
     sectionId: "real_world_role_playing",
     sectionTitle: "REAL WORLD ROLE PLAYING",
     sectionHeaderText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Inspire imaginative play and build essential life skills with LEGO sets that bring everyday adventures to life.",
     borderColor: "red",
     content: sectionContent["real_world_role_playing"],
   },
